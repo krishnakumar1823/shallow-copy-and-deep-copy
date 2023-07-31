@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>shallow copy and deep copy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-8 row">
+            <button class="col-2" type="button" onclick="print_shallow(this)" style="height: 30px !important;">Shallow Copy</button>
+            <div class="col-5 row text-center">
+                <p style="color:red">Original</p>
+                <div class="col-6">
+                    <p style="color:red">reference variable</p>
+                    <p id="originalShallow"></p>
+                </div>
+        
+                <div class="col-6">
+                    <p style="color:red">new reference variable</p>
+                    <p id="assign"></p>
+                </div>
+            </div>
+            <div class="col-5 row text-center">
+                <p style="color:red">After modification</p>
+                <div class="col-6">
+                    <p style="color:red">reference variable</p>
+                    <p id="originalShallow1"></p>
+                </div>
+        
+                <div class="col-6">
+                    <p style="color:red">new reference variable</p>
+                    <p id="modified"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-8 row">
+            <button class="col-12 col-lg-2" type="button" onclick="print_deep(this)" style="height: 30px !important;">Deep Copy</button>
+            <div class="col-12 col-lg-10 row text-center">
+                <p style="color:red">Deep copy JSON</p>
+                <div class="col-6 row text-center">
+                    <p style="color:red">Original</p>
+                    <div class="col-6">
+                        <p style="color:red">reference variable</p>
+                        <p id="originalDeep"></p>
+                    </div>
+
+                    <div class="col-6">
+                        <p style="color:red">new reference variable</p>
+                        <p id="assignDeep"></p>
+                    </div>
+                </div>
+                <div class="col-6 row text-center">
+                    <p style="color:red">After modification</p>
+                    <div class="col-6">
+                        <p style="color:red">reference variable</p>
+                        <p id="originalDeep1"></p>
+                    </div>
+        
+                    <div class="col-6">
+                        <p style="color:red">new reference variable</p>
+                        <p id="modifiedDeep"></p>
+                    </div>
+                </div>
+        
+                <p style="color:red">Deep copy object assign()</p>
+                <div class="col-6 row text-center">
+                    <p style="color:red">Original</p>
+                    <div class="col-6">
+                        <p style="color:red">reference variable</p>
+                        <p id="originalObjectAssign"></p>
+                    </div>
+        
+                    <div class="col-6">
+                        <p style="color:red">new reference variable</p>
+                        <p id="ObjectAssign"></p>
+                    </div>
+                </div>
+                <div class="col-6 row text-center">
+                    <p style="color:red">After modification</p>
+                    <div class="col-6">
+                        <p style="color:red">reference variable</p>
+                        <p id="originalObjectAssign1"></p>
+                    </div>
+        
+                    <div class="col-6">
+                        <p style="color:red">new reference variable</p>
+                        <p id="modifiedObjectAssign"></p>
+                    </div>
+                </div>
+        
+                <p style="color:red">Deep copy spread operator()</p>
+                <div class="col-6 row text-center">
+                    <p style="color:red">Original</p>
+                    <div class="col-6">
+                        <p style="color:red">reference variable</p>
+                        <p id="originalSpread"></p>
+                    </div>
+        
+                    <div class="col-6">
+                        <p style="color:red">new reference variable</p>
+                        <p id="ObjectSpread"></p>
+                    </div>
+                </div>
+                <div class="col-6 row text-center">
+                    <p style="color:red">After modification</p>
+                    <div class="col-6">
+                        <p style="color:red">reference variable</p>
+                        <p id="originalSpread1"></p>
+                    </div>
+        
+                    <div class="col-6">
+                        <p style="color:red">new reference variable</p>
+                        <p id="modifiedSpread"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
